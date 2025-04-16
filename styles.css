@@ -1,76 +1,109 @@
-:root {
-  --bg: #f4f4f4;
-  --text: #333;
-  --accent: #0077cc;
-  --card: #fff;
-}
-
-.dark-theme {
-  --bg: #1e1e1e;
-  --text: #ddd;
-  --accent: #66b3ff;
-  --card: #2c2c2c;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  background: var(--card);
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
+/* Cabeçalho */
 header {
-  text-align: center;
-  margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-.perfil {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+header nav ul {
+    list-style: none;
+    text-align: center;
 }
 
-.botoes button {
-  margin: 5px;
-  padding: 10px 15px;
-  background-color: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.botoes button:hover {
-  opacity: 0.9;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.skills li {
-  display: inline-block;
-  background: #eee;
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 4px;
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px 0;
 }
 
-.dark-theme .skills li {
-  background: #444;
+#home {
+    background-color: #fff;
+    text-align: center;
 }
 
+#servicos ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#servicos ul li {
+    margin: 10px 0;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
 footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 10px;
+    }
 }
