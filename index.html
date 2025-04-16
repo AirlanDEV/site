@@ -3,64 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo - Seu Nome</title>
+  <title>Sutil Arte</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="foto-perfil.jpg" alt="Foto de perfil" class="perfil">
-      <h1>Seu Nome</h1>
-      <p>Desenvolvedor Web | UX/UI Designer</p>
-      <div class="botoes">
-        <button onclick="baixarPDF()">📄 Baixar Currículo</button>
-        <button onclick="alternarTema()">🌙 Alternar Tema</button>
+  <header>
+    <div class="container">
+      <h1>Sutil Arte</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>Somos especializados em placas e fachadas, oferecendo soluções criativas e personalizadas para sua empresa.</p>
       </div>
-    </header>
-
-    <section>
-      <h2>Perfil</h2>
-      <p>Profissional com experiência em desenvolvimento web, apaixonado por tecnologia e design...</p>
     </section>
 
-    <section>
-      <h2>Experiência Profissional</h2>
-      <ul>
-        <li>
-          <strong>Empresa X</strong> – Desenvolvedor Front-end (2022 - atual)<br>
-          React, APIs REST, responsividade e testes automatizados.
-        </li>
-        <li>
-          <strong>Empresa Y</strong> – Estagiário em TI (2021 - 2022)<br>
-          Suporte técnico e automação de planilhas.
-        </li>
-      </ul>
+    <section id="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <ul>
+          <li>Placas em ACM</li>
+          <li>Fachadas em vidro</li>
+          <li>Letreiros luminosos</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Educação</h2>
-      <ul>
-        <li><strong>Universidade ABC</strong> – Bacharelado em Ciência da Computação (2018 - 2022)</li>
-      </ul>
+    <section id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <form id="form-contato">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="resposta"></p>
+      </div>
     </section>
-
-    <section>
-      <h2>Habilidades</h2>
-      <ul class="skills">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
-  </div>
+  </main>
 
   <footer>
-    <p>Contato: seuemail@email.com | (11) 99999-9999 | LinkedIn: /seunome</p>
+    <div class="container">
+      <p>&copy; 2025 Sutil Arte. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
