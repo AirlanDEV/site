@@ -46,13 +46,39 @@ section {
     text-align: center;
 }
 
-#servicos ul {
-    list-style: none;
-    padding-left: 20px;
+#servicos {
+    background-color: #fff;
 }
 
-#servicos ul li {
-    margin: 10px 0;
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servico {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servico h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.servico p {
+    color: #666;
 }
 
 /* Formulário de Contato */
@@ -101,6 +127,15 @@ footer {
     header nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 80%;
     }
 
     form {
