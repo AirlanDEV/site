@@ -9,9 +9,13 @@
 <body>
   <div class="container">
     <header>
+      <img src="foto-perfil.jpg" alt="Foto de perfil" class="perfil">
       <h1>Seu Nome</h1>
-      <p>Desenvolvedor Web | UX/UI Designer | [Outro Cargo]</p>
-      <button onclick="baixarPDF()">Baixar Currículo (PDF)</button>
+      <p>Desenvolvedor Web | UX/UI Designer</p>
+      <div class="botoes">
+        <button onclick="baixarPDF()">📄 Baixar Currículo</button>
+        <button onclick="alternarTema()">🌙 Alternar Tema</button>
+      </div>
     </header>
 
     <section>
@@ -24,11 +28,11 @@
       <ul>
         <li>
           <strong>Empresa X</strong> – Desenvolvedor Front-end (2022 - atual)<br>
-          Trabalhei com React, APIs REST, responsividade e testes automatizados.
+          React, APIs REST, responsividade e testes automatizados.
         </li>
         <li>
           <strong>Empresa Y</strong> – Estagiário em TI (2021 - 2022)<br>
-          Suporte técnico e automação de planilhas com VBA.
+          Suporte técnico e automação de planilhas.
         </li>
       </ul>
     </section>
@@ -56,6 +60,7 @@
     <p>Contato: seuemail@email.com | (11) 99999-9999 | LinkedIn: /seunome</p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
